@@ -31,7 +31,7 @@ object Utils {
             lastName = null
         }
 
-        println("First name = $firstName, last name = $lastName")
+        //println("First name = $firstName, last name = $lastName")
         return Pair(firstName, lastName)
     }
 
@@ -114,7 +114,7 @@ object Utils {
 
     //Return initials of a full name
     fun toInitials(firstName: String?, lastName: String?): String? {
-        
+
         return ("${firstName?.toUpperCase()?.get(0)}${lastName?.toUpperCase()?.get(0)}")
     }
 

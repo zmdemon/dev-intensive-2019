@@ -12,17 +12,8 @@ abstract class BaseMessage(
     val date: Date = Date()
 
 ) {
-    abstract fun formatMessage():String
-    fun fakeFormatMessage(
-        id: String,
-        from: User?,
-        chat: Chat,
-        isIncoming: Boolean,
-        date: Date
-    ): String {
+    abstract fun formatMessage(): String
 
-        return ("${from?.firstName} ${if (isIncoming) "отправил" else "получил"} сообщение '$chat' $date")
-    }
 
     companion object AbstractFactory {
         var lastId: Int = -1

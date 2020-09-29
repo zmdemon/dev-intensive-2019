@@ -24,7 +24,7 @@ class User (
     )
     constructor(id: String): this(id, "Joe", "Doe")
     init {
-        println("bomb has been planted")
+        println("user initialized")
         // Print first name and last name of the user
     }
 
